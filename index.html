@@ -1,261 +1,2428 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Keming Jiao</title>
-  
-  <meta name="author" content="Keming Jiao">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<!--   <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
-</head>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Yuliang Xiu 修宇亮</title>
+    <link href="./style.css" rel="stylesheet" media="all" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+    ></script>
 
-<head>
-  <style>
-    .center-img {
-      text-align: center;
-    }
-  </style>
+    <script
+      src="https://kit.fontawesome.com/57fb8d417e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      window.onload = choosePic;
+      var myPix = new Array("./image/KemingJiao.jpg");
+      function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("myPicture").src = myPix[randomNum];
+      }
+      function lastUpdate() {
+        var x = document.lastModified.substr(0, 10);
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+    <script type="text/javascript" src="./js/hidebib.js"></script>
+    <script type="text/javascript" src="./js/loadtxt.js"></script>
   </head>
 
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Keming Jiao 「焦柯鸣」</name>
-              </p>
-              <p>
-                <b>I'm looking for summer internship opportunities 2025 in EU and part-time jobs in Lund/Malmö, Sweden!</b>
-              </p>
-              <p>I'm a master student in <a href="https://www.lth.se/english/">LTH</a>, <a href="https://www.lunduniversity.lu.se/">Lund University</a>, enrolled in the Master's Programme in Virtual Reality and Augmented Reality. Before that, I got my bachelor's degree at <a href="https://english.seiee.sjtu.edu.cn/"> School of Electronic Information & Electrical Engineering (SEIEE)</a>, <a href="http://en.sjtu.edu.cn"> Shanghai Jiao Tong University (SJTU)</a>, majoring in Electronic Science & Technology. Now I'm interested in Computer Graphics, VR&AR and Computer Vision. I hope I can make my own contribution in these areas.
-              </p>
-              <p>On my student ID card, I am an engineering student. In my mind, I am a social observer. But in my heart, I am just a lifelong gamer exploring the world.
-              </p>
-<!--               <p style="text-align:center"><font color="red"><em><strong>I will apply for PhD programs starting in 2023 Fall.</strong></em></font>
-              </p> -->
-              
-<!--               <p>
-              </p> -->
-              <br>
-<!--               <p style="text-align:center">
-                  I'm looking for summer research opportunities in 2021!
-              </p> -->
-              <p style="text-align:center">
-                <a href="mailto:keming.jiao.6688@student.lu.se">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com.hk/citations?user=8547_fAAAAAJ&hl=zh-CN">Scholar</a> &nbsp/&nbsp
-                <a href="CV/CV_2406.pdf">CV</a> &nbsp/&nbsp
-                 <a href="https://space.bilibili.com/25704273?spm_id_from=444.41.0.0">Bilibili</a> &nbsp/&nbsp
-                 <a href="https://www.linkedin.com/in/keming-jiao-323bba300/?trk=opento_sprofile_details">Linkedin</a> &nbsp/&nbsp
-                <a href="https://github.com/JiaoKM">GitHub</a>
-<!--                 <a href="data/JonBarron-bio.txt">Biography</a> &nbsp/&nbsp -->
-<!--                 <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Google Scholar</a>  --><!-- &nbsp/&nbsp -->
-<!--                 <a href="https://twitter.com/jon_barron">Twitter</a> -->
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="image/KemingJiao.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="image/KemingJiao.jpg" class="hoverZoomLink"></a>
+  <body onload="lastUpdate()">
+    <div class="content">
+      <div id="container">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  id="myPicture"
+                  src="./image/KemingJiao.jpg"
+                  style="
+                    float: left;
+                    margin-top: 60px;
+                    margin-left: 60px;
+                    margin-bottom: 10px;
+                    border-radius: 10%;
+                  "
+                  width="200px"
+                />
+              </td>
+              <td>
+                <div id="DocInfo">
+                  <div id="intro">
+                    <h1>Keming Jiao 焦柯鸣</h1>
+                    <!-- <a target='_blank'
+                        href='https://goo.gl/maps/vfTQ6Gbbg3gNvzTZ8'
+                        title='Location'>
+                        <font size="5"><i class='fas
+                            fa-map-marker-alt'></i></font>
+                      </a> -->
+                    <a
+                      style="color: black"
+                      href="https://www.lth.se/english/"
+                      >Lund University, LTH</a
+                    ><br />
+                    <br />
+                    <a href="mailto: keming.jiao.6688@student.lu.se">
+                      <span
+                        class="fa fa-envelope"
+                        style="color: navy; font-size: 20px"
+                      >
+                        <span style="font-family: Optima Bold"
+                          >keming.jiao.6688</span
+                        >
+                        <span
+                          class="fa fa-at"
+                          style="color: navy; font-size: 20px"
+                          ><span style="font-family: Optima Bold">
+                            student.lu.se</span
+                          ></span
+                        ></span
+                      ></a
+                    ><br />
+                  </div>
+
+                  <ul class="icon-list">
+                    <a style="color: black" href="./CV/CV_2406.pdf">
+                      <span class="ai ai-cv fa-xl"></span>
+                    </a>
+
+                    <a
+                      style="color: black"
+                      href="https://scholar.google.com.hk/citations?user=8547_fAAAAAJ&hl=zh-CN"
+                    >
+                      <span class="ai ai-google-scholar fa-xl"></span>
+                    </a>
+
+                    <a
+                      style="color: black"
+                      href="https://github.com/JiaoKM"
+                    >
+                      <span class="fa-brands fa-github fa-xl"></span>
+                    </a>
+
+                    <!-- <a
+                      style="color: black"
+                      href="https://www.researchgate.net/profile/Yuliang-Xiu"
+                    >
+                      <span class="ai ai-researchgate fa-xl"></span>
+                    </a> -->
+                    <span style="color: gray; font-weight: normal">|</span>
+                    <!-- <a
+                      style="color: black"
+                      href="https://www.linkedin.com/in/yuliangxiu"
+                    >
+                      <span class="fa fa-linkedin fa-xl"></span>
+                    </a> -->
+
+                    <!-- <a
+                      style="color: black"
+                      href="https://www.facebook.com/xiuyuliang1993"
+                    >
+                      <span class="fa fa-facebook fa-xl"></span>
+                    </a> -->
+
+                    <a
+                      style="color: black"
+                      href="https://www.zhihu.com/people/10fen-21miao-de-deng-dai"
+                    >
+                      <span class="fa-brands fa-zhihu fa-xl"></span>
+                    </a>
+
+                    <a
+                      style="color: black"
+                      href="https://space.bilibili.com/25704273"
+                    >
+                      <span class="fa-brands fa-bilibili fa-xl"></span>
+                    </a>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <br />
+              <h1>Biography</h1>
+
+              <b
+                >I will join
+                 as a tenure-track Assistant Professor in Spring 2025, and
+                lead <span style="color: brown">远兮实验室</span> (<a
+                  href="http://endless.do/"
+                  >endless.do</a
+                >) as PI. <br /><br />I am actively recruiting
+                <del>25Fall PhD</del>, RA (<i style="color: chocolate">
+                  >6 months, research oriented </i
+                >) and visiting student (<i style="color: chocolate">
+                  target for 26Fall PhD@Westlake </i
+                >). If you are interested, please complete the
+                <a href="https://forms.gle/D4iSwo1nHVzG4dus7">Google Form</a>,
+                then send the required materials to
+                <a
+                  href="mailto:xiuyuliang@westlake.edu.cn?subject=【揭榜】XX大学-姓名-XX申请"
+                  >Email</a
+                >, as outlined in
+                <a href="https://zhuanlan.zhihu.com/p/692233176"
+                  >Recruitment</a
+                ></b
+              ><br />
+
+              <!-- Calendly badge widget begin -->
+              <link
+                href="https://assets.calendly.com/assets/external/widget.css"
+                rel="stylesheet"
+              />
+              <script
+                src="https://assets.calendly.com/assets/external/widget.js"
+                type="text/javascript"
+                async
+              ></script>
+              <!-- Calendly badge widget end -->
+
+              <hr />
+
+              I am currently a final Year Ph.D. student (2020.11 - Now), working
+              in
+              <a href="https://ps.is.tuebingen.mpg.de/">Perceiving Systems</a>,
+              Max Planck Institute for Intelligent Systems (MPI-IS), with
+              <a href="https://ps.is.tuebingen.mpg.de/person/black"
+                >Michael J. Black</a
+              >
+              and
+              <a href="https://dtzionas.com">Dimitrios Tzionas</a>. As
+              a Marie Sklodowska-Curie Fellow (MSCA) of
+              <a href="https://www.clipe-itn.eu/">CLIPE (ESR 11)</a>,
+              <!-- my Ph.D.
+              topic is
+              <i
+                >Image/video-based holistic modeling for the animation of body,
+                face, hands, feet, clothing, and interaction</i
+              >.  -->
+              I work on
+              <a
+                shape="rect"
+                href="javascript:toggleblock(&#39;biosection&#39;)"
+                class="toggleblock"
+                ><strong>Democratizing Human-centric Digitization</strong></a
+              >
+              in computer vision, computer graphics and machine learning.
+              <!-- which is part of the
+              <a href="https://www.clipe-itn.eu/">CLIPE</a> initiative and
+              funded by the European Union’s Horizon 2020 Research and
+              Innovation Programme.  -->
+
+              <div>
+                <div
+                  class="focus"
+                  id="biosection"
+                  style="display: none; background-color: lightgoldenrodyellow"
+                >
+                  <ul>
+                    <li>
+                      <strong>Human-centric.</strong>
+                      <i><u>Human is the measure of all things</u></i
+                      ><br />
+                      As intellectual beings, humans shape the world to our
+                      will. If we agree that pursuing AGI (Artificial General
+                      Intelligence) is valuable -- where agents can perform any
+                      intellectual task as well as or better than us, then
+                      learning skillsets through simulating lifelike virtual
+                      humans could be a critical baby step.
+                    </li>
+                    <li>
+                      <strong>Digitization.</strong>
+                      <i><u>What I cannot create, I do not understand</u></i
+                      ><br />
+                      Compared to text and images, the digitization of the 3D
+                      world is underdeveloped due to the costly and
+                      time-consuming process of capturing or synthesizing.
+                      Specifically, the challenge of creating 3D digital humans
+                      with photorealistic appearances, lifelike movements, and
+                      faithful personalities in a scalable manner remains
+                      unresolved.
+                    </li>
+                    <li>
+                      <strong>Democratization</strong>.
+                      <i><u>Immortality stems from generalization</u></i
+                      ><br />
+                      I am always intrigued by ideas that are conceptually
+                      intuitive yet practically applicable. Great models should
+                      be truly generalizable, scalable on large-scale raw data,
+                      accessible to the general public, and ultimately benefit
+                      all of humanity.
+                    </li>
+                  </ul>
+                </div>
+                <br />
+              </div>
+
+              I was briefly enrolled (2019.9-2020.10) as a Ph.D. student in
+              <a href="http://vgl.ict.usc.edu">Vision and Graphics Lab</a> at
+              University of Southern California, advised by
+              <a href="http://hao-li.com">Hao Li</a>. I got M.Sc. degree at
+              Shanghai Jiao Tong University in 2019, working in
+              <a href="https://www.mvig.org/"
+                >Machine Vision and Intelligence Group</a
+              >, advised by <a href="https://www.mvig.org/">Cewu Lu</a>, and got
+              B.Eng. degree in Digital Media Technology at Shandong University
+              in 2016, worked closely with
+              <a href="https://wanglusdu.github.io/">Lu Wang</a>.
+
+              <br /><br />
+              I spent wonderful time at USC Institute for Creative Technology
+              with
+              <a href="https://junxnui.github.io/">Jun Xing</a>, at Kwai Y-tech
+              with <a href="http://www.chongyangma.com">Chongyang Ma</a>, at
+              LightChaser Animation Studio with
+              <a href="https://zenustech.com/">Xinxin Zhang</a>, and at Ubisoft
+              La Forge. I am interning at Meta Reality Labs with
+              <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a>.
+              <br />
             </td>
           </tr>
-        </tbody></table>
+        </table>
 
-        <div class="center-img">
-          <img src="image/video.gif" alt="Shown" width="250px">
+        <div class="logo">
+          
+          <a href="https://www.mvig.org/member/"
+            ><img src="./image/SJTU_logo.png"
+          /></a>
+          <a href="https://en.sdu.edu.cn/"
+            ><img src="./image/lund_logo.png"
+          /></a>
+          <!-- <a href="https://www.ncku.edu.tw/"
+            ><img src="./about/ncku_logo.png"
+          /></a> -->
+          <!-- <span class="logo2">
+            <a href="https://about.meta.com/realitylabs/"
+              ><img src="./about/meta_logo.png"
+            /></a>
+            <a
+              href="https://montreal.ubisoft.com/en/our-commitments/rd-la-forge/"
+              ><img src="./about/ubisoft_logo.png"
+            /></a>
+            <a href="http://www.chongyangma.com/"
+              ><img src="./about/kwai_logo.png"
+            /></a>
+            <a href="http://www.zhuiguang.com/?lang=en"
+              ><img src="./about/lightchaser_logo.png"
+            /></a>
+          </span> -->
         </div>
+
         
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-            </td>
-          </tr>
-          <tr>
-        </tbody></table>
+        <br />
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 0px 20px;width:30%;vertical-align:middle"><img src="image/AMFS.png" width="200" height="150"></td>
-            <td style="padding:0px 20px 20px 20px;width:70%;vertical-align:middle">
-              <papertitle>Enhanced Anomaly Detection using Spatial-Alignment and Multi-scale Fusion
-              </papertitle>
-                <br>
-                <b>Keming Jiao</b>, Xincheng Yao, Lu Wang, Baozhu Zhang, Zhenyu Liu, Chongyang Zhang. <i>the 7th Chinese Conference on Pattern Recognition and Computer Vision (PRCV) (Accepted), 2024, Urumqi, China</i>
-                <br>
-                <a href="https://github.com/JiaoKM/GPD_dataset">Dataset</a> &nbsp/&nbsp
-                <a href="paper/AMFS.pdf">Paper</a>
-              </br>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 0px 20px;width:30%;vertical-align:middle"><img src="image/MDAPN.png" width="200" height="150"></td>
-            <td style="padding:0px 20px 20px 20px;width:70%;vertical-align:middle">
-              <papertitle>Multi-stream domain adversarial prototype network for integrated smart roller TBM main bearing fault diagnosis across various low rotating speeds
-              </papertitle>
-                <br>
-              Xingchen Fu, <b>Keming Jiao</b>, Jianfeng Tao, Chengliang Liu. <i>Reliability Engineering & System Safety p. 110284. Elsevier, 2024</i>
-              </br>
-            </td>
-          </tr>
-        </tbody></table>
+        <h1>
+          News
+          <a
+            href="https://twitter.com/yuliangxiu?ref_src=twsrc%5Etfw"
+            class="twitter-follow-button"
+            data-show-count="false"
+            >Follow @yuliangxiu</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </h1>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Projects</heading>
-            </td>
-          </tr>
-          <tr>
-        </tbody></table>
+        <div style="height: 205px; overflow: auto">
+          [2024/10/19] Please check out our Stable-X HuggingFace demos:
+          <a href="https://huggingface.co/spaces/Stable-X/StableNormal"
+            >StableNormal</a
+          >,
+          <a href="https://huggingface.co/spaces/Stable-X/StableRecon"
+            >StableRecon</a
+          >, and
+          <a href="https://huggingface.co/spaces/Stable-X/StableDelight"
+            >StableDelight</a
+          >.<br />
+          [2024/08/29] Invited talk
+          <i
+            ><a href="https://www.bilibili.com/video/BV16E4m197ya"
+              >"Democratizing Human Digitization from Casual Photos"</a
+            ></i
+          >
+          at GAMES Webinar<br />
+          [2024/07/28]
+          <a href="https://puzzleavatar.is.tue.mpg.de">PuzzleAvatar</a> and
+          <a href="https://stable-x.github.io/StableNormal/">StableNormal</a>
+          both get accepted by
+          <b style="color: brown">SIGGRAPH Asia 2024 (Journal)</b>, see you in
+          Tokyo.<br />
+          [2024/07/22] I start the internship at
+          <strong style="color: #0081fb">Reality Labs Research @ Meta</strong>,
+          working with
+          <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a>, see you
+          at Pittsburgh.<br />
+          [2024/07/02] I will serve as the Area Chair of
+          <a href="https://3dvconf.github.io/2025/">3DV 2025</a>, see you in
+          Singapore.<br />
+          [2024/05/08] We will organize the workshop of
+          <a href="https://human-foundation.github.io/workshop-eccv-2024/"
+            >Foundation Models for 3D Humans</a
+          >
+          on ECCV'24, call for posters and demos!<br />
+          [2024/04/12] <a href="http://boft.wyliu.com/">BOFT (ICLR'24)</a> has
+          been integrated into
+          <a
+            href="https://huggingface.co/docs/peft/main/en/conceptual_guides/oft"
+            style="padding-left: 0.5rem; vertical-align: top"
+            ><img
+              src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-PEFT-orange" /></a
+          ><br />
+          [2024/03/21] I will serve as the Publicity Chair of 3DV (2025), please
+          share your academic meme via
+          <a href="https://twitter.com/3DVconf">@3DVconf</a><br />
+          [2024/01/31] My three master mentees got their Ph.D. offers from TUM ,
+          MBZUAI, and HKU, see my
+          <a href="#mentoring">Mentoring List</a>.<br />
+          [2024/01/16]
+          <a href="https://gshell3d.github.io/">G-Shell</a> and
+          <a href="http://boft.wyliu.com/">BOFT</a> get accepted by
+          <strong style="color: brown">ICLR 2024</strong>, and G-Shell is
+          selected as
+          <strong style="color: brown">Oral (top 1.2%)</strong>.<br />
+          [2023/12/14] I will join
+          <a href="https://en-soe.westlake.edu.cn/OurSchool/program/programAI/"
+            ><b style="color: brown"> Westlake University</b></a
+          >
+          as a tenure-track Assistant Professor in Spring 2025, and relocate to
+          <a href="https://en.wikipedia.org/wiki/Hangzhou">Hangzhou</a>.<br />
+          <!-- [2023/11/23] I will intern at
+          <strong style="color: #0081fb">Reality Labs @ Meta</strong> next
+          sunner with
+          <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a>, see you
+          at Pittsburgh.<br /> -->
+          <hr />
+          [2023/11/13]
+          <i
+            >"Parameter-Efficient Orthogonal Finetuning via Butterfly
+            Factorization"</i
+          >
+          comes out, see <a href="http://boft.wyliu.com/">BOFT</a>.<br />
+          [2023/11/09] Invited talk
+          <i>"Democratizing Human Digitization"</i> at Westlake University [<a
+            href="https://www.dropbox.com/scl/fi/ek1sigv3qx17wx6vmjlgk/Westlake-Yuliang.pdf?rlkey=2wu781hg441oxha8phvqwesen&dl=0"
+            ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+            >Slides</a
+          >]<br />
+          [2023/10/24]
+          <i
+            >"Ghost on the Shell: An Expressive Representation of General 3D
+            Shapes"</i
+          >
+          comes out, see
+          <a href="https://gshell3d.github.io/">G-Shell</a>.<br />
+          [2023/10/16] Both
+          <a href="https://huangyangyi.github.io/TeCH">TeCH</a> and
+          <a href="https://tada.is.tue.mpg.de/">TADA</a> get accepted by
+          <strong style="color: brown">3DV 2024</strong>. <br />
+          [2023/08-09] Invited talks
+          <em>"Human Digitization from Pixels and Tokens"</em> at Google
+          Research, Cornell, Tsinghua IIIS, and IDEA<br />
+          <!-- <a href="javascript:toggleblock(&#39;old_news&#39;)"
+          >---- show more ----</a
+        >
+        <div id="old_news" style="display: none"> -->
+          [2023/08/21] <i>"TADA! Text to Animatable Digital Avatars"</i> comes
+          out, see <a href="https://tada.is.tue.mpg.de/">TADA</a>.<br />
+          [2023/08/17]
+          <i>"TeCH: Text-guided Reconstruction of Lifelike Clothed Humans"</i>
+          comes out, see
+          <a href="https://huangyangyi.github.io/TeCH">TeCH</a>.<br />
+          [2023/07/14]
+          <i
+            >"D-IF: Uncertainty-aware Human Digitization via Implicit
+            Distribution Field"</i
+          >
+          (<strong style="color: brown">ICCV 2023</strong>), see
+          <a href="https://arxiv.org/abs/2308.08857">D-IF</a>.<br />
+          [2023/01-06] Invited
+          <a
+            href="https://www.bilibili.com/video/BV1NM4y1B7UN/?spm_id_from=333.999.list.card_archive.click&vd_source=4fa43a1b25f1451c4212f214517d8932"
+            ><i class="fa fa-video" aria-hidden="true">&nbsp;</i>Talk&nbsp;(30
+            min)</a
+          >
+          <em
+            >"Towards Large-scale Human Digitization: Implicit or Explicit?"</em
+          >
+          (<a
+            href="https://www.dropbox.com/s/7ncqw60nkr8g7ud/ECON%26ICON.pdf?dl=0"
+            ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+            >Slides</a
+          >, 75MB) at <strong>industry</strong> (Taichi, Shanghai AI Lab, BIGAI,
+          Huawei) and <strong>academia</strong> (PKU, CUHK, UCLA, ETH Zurich,
+          SDU, CAS). <br />
+          [2023/04/23] ECON won
+          <strong style="color: brown">Outstanding Poster</strong> (4/80) in
+          China 3DV. <br />
+          [2023/04/16] Now both
+          <a
+            href="https://huggingface.co/spaces/Yuliang/ECON"
+            style="padding-left: 0.5rem; vertical-align: top"
+            ><img
+              src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ECON-orange"
+          /></a>
+          and
+          <a
+            href="https://colab.research.google.com/drive/1YRgwoRCZIrSB2e7auEWFyG10Xzjbrbno?usp=sharing"
+            style="padding-left: 0.5rem; vertical-align: top"
+            ><img
+              src="https://colab.research.google.com/assets/colab-badge.svg"
+              alt="Google Colab"
+          /></a>
+          are available for ECON users!<br />
+          [2023/03/21] ECON has been selected as
+          <strong style="color: brown">CVPR highlight</strong> papers (10% of
+          accepted papers, 2.5% of submissions). <br />
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 0px 20px;width:20%;vertical-align:middle"><img src="image/240724version.png" width="200" height="150"></td>
-            <td style="padding:0px 20px 20px 20px;width:80%;vertical-align:middle">
-              <papertitle>CPU Renderer</papertitle>
-              <br>
-              <em>July</em>, &nbsp;2024&nbsp;
-              <br>
-              <a href="https://github.com/JiaoKM/Beginner_Renderer_JKodak">Code</a>
-              <br>
-              <font color='gray'>A simple CPU renderer created using Qt Creator. Development continues.</font>
-            </td>
-          </tr>
-        </tbody></table>
+          [2023/02/27] <a href="https://xiuyuliang.cn/econ">ECON</a> and
+          <a href="https://tingtingliao.github.io/CAR/">CAR</a> got accepted by
+          <strong style="color: brown">CVPR 2023</strong>. Byebye Vancouver!
+          <br />
+          [2023/02/13]
+          <a
+            href="https://www.nytimes.com/interactive/2023/02/13/sports/football/kadarius-toney-punt-return-super-bowl-chiefs.html"
+            ><em
+              ><strong style="color: brown">NYTimes</strong>"See How Kansas City
+              Secured Its Comeback"</em
+            ></a
+          >, ICON for Super Bowl 2023!<br />
+          [2023/01/12] Multiple contributors support
+          <a
+            href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-windows.md"
+            >Windows</a
+          >,
+          <a
+            href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-docker.md"
+            >Docker</a
+          >,
+          <a href="https://carlosedubarreto.gumroad.com/l/CEB_ECON">Blender</a>
+          and<a
+            href="https://colab.research.google.com/drive/1YRgwoRCZIrSB2e7auEWFyG10Xzjbrbno?usp=sharing"
+            style="padding-left: 0.5rem"
+            >Google Colab</a
+          >
+          for ECON, bravo!<br />
+          [2022/12/20]
+          <a
+            href="https://rd.nytimes.com/projects/modeling-key-world-cup-moments-with-machine-learning"
+            ><em
+              ><strong style="color: brown">NYTimes</strong>"Modeling Key World
+              Cup Moments with Machine Learning"</em
+            ></a
+          >, ICON for World Cup 2022!<br />
+          [2022/12/15] <a href="https://icon.is.tue.mpg.de/">ICON</a> belongs to
+          the past, <a href="https://xiuyuliang.cn/econ">ECON</a> is the
+          future!<br />
+          [2022/11/07]
+          <a href="https://arxiv.org/abs/2211.03375">AlphaPose</a> finally got
+          accepted by <strong style="color: brown">TPAMI 2022</strong>
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=MVIG-SJTU&repo=AlphaPose&type=star&count=true&v=2&size=small"
+            frameborder="0"
+            scrolling="0"
+            width="200"
+            height="20"
+          ></iframe
+          ><br />
+          [2022/09/17] <a href="https://dart2022.github.io/">DART</a> got
+          accepted by <strong style="color: brown">NeurIPS 2022</strong>
+          <i style="color: brown">- Datasets and Benchmarks Track</i>.
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=DART2022&repo=DART&type=star&count=true&v=2&size=small"
+            frameborder="0"
+            scrolling="0"
+            width="200"
+            height="20"
+          ></iframe
+          ><br />
+          [2022/08/29] I am invited to give a talk at <b>Adobe's</b> Digital
+          Human Seminar.<br />
+          [2022/08/01]
+          <a
+            href="https://huggingface.co/spaces/Yuliang/ICON"
+            style="padding-left: 0.5rem"
+            ><img
+              src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ICON-orange"
+          /></a>
+          <a
+            href="https://colab.research.google.com/drive/1-AWeWhPvCTBX0KfMtgtMk10uPU05ihoA?usp=sharing"
+            style="padding-left: 0.5rem"
+            ><img
+              src="https://colab.research.google.com/assets/colab-badge.svg"
+              alt="Google Colab"
+          /></a>
+          of ICON, play with it on your images!<br />
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 0px 20px;width:20%;vertical-align:middle"><img src="image/VRgame.png" width="150" height="150"></td>
-            <td style="padding:0px 20px 20px 20px;width:80%;vertical-align:middle">
-              <papertitle> Slay the Spire VR version</papertitle>
-              <br>
-              <em>May</em>, &nbsp;2024&nbsp;
-              <br>
-              <a href="https://www.bilibili.com/video/BV1EZ421s7Z4/?spm_id_from=333.999.0.0&vd_source=86d8dcac0057c7ea489aea8846dc4434">Video</a>
-              <br>
-              <font color='gray'>A simple VR version of famous game Slay the Spire. It can be played on PICO4 headset.</font>
-            </td>
-          </tr>
-        </tbody></table>
+          [2022/04/20] Invited to talk about
+          <a href="https://www.buzzsprout.com/1914034/10466744">ICON</a> at
+          Talking Papers Podcast. Great chat with
+          <a href="https://www.itzikbs.com/">Yizhak Ben-Shabat</a>!<br />
+          [2022/04/07] 走进马克思普朗克智能系统研究所与苏黎世联邦理工AIT团队
+          <a
+            href="https://app6ca5octe2206.pc.xiaoe-tech.com/page/1827300?navIndex=3"
+            ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+            >视频(中文)&nbsp;</a
+          >[<a href="https://jmq.xet.tech/s/8he6q">上</a>,
+          <a href="https://jmq.xet.tech/s/ld2pb">下</a>]. <br />
+          [2022/03/02] <a href="https://icon.is.tue.mpg.de/">ICON</a> got
+          accepted by <strong style="color: brown">CVPR 2022</strong> &#8594;
+          <a href="https://readpaper.com/paper/4569785684533977089"
+            ><i class="fas fa-comments" aria-hidden="true">&nbsp;</i
+            >Reader&nbsp;</a
+          ><a href="https://discord.gg/Vqa7KBGRyk"
+            ><i class="fab fa-discord" aria-hidden="true">&nbsp;</i
+            >Discord&nbsp;</a
+          ><br />
+          [2022/02/01] I am invited to give Tech Talks by <b>USC-ICT</b>, and
+          <b>Meta Reality Labs, Pittsburgh</b> (<a
+            href="https://www.dropbox.com/s/bymd8zryce6cckf/ICON-ICT%26Meta.pdf?dl=0"
+            >PDF</a
+          >, 21MB).<br />
+          [2021/12/17] New work "ICON: Implicit Clothed humans Obtained from
+          Normals", please check its
+          <a href="https://icon.is.tue.mpg.de/">page</a>.<br />
+          [2020/09/01] Get admitted to
+          <a href="http://clipe-itn.eu/">CLIPE ESR11</a> and will be joining
+          <a href="https://ps.is.mpg.de/person/black">Michael Black</a>'s team
+          at MPI for Intelligent Systems.<br />
+          [2020/08/26]
+          <a href="https://youtu.be/THxYxcEnKFk"
+            >" Volumetric Human Teleportation"</a
+          >
+          won <strong style="color: brown">Best in Show Award </strong>of
+          SIGGRAPH Real-Time Live 2020!<br />
+          [2020/08/25]
+          <a href="https://project-splinter.github.io/">Project-Splinter</a>:
+          Human Digitization with Implicit Representation is launched!<br />
+          [2020/07/02] Our "Monoport: Monocular Real-Time Volumetric
+          Teleportation" work was accepted by
+          <strong style="color: brown">ECCV 2020</strong>
+          <br />
+          [2020/05/08] Our "Volumetric Human Teleportation" demo was accepted by
+          <strong style="color: brown">SIGGRAPH Real-Time Live 2020</strong>
+          <br />
+          [2019/03/03] I will be joining USC CS Ph.D. Program in fall 2019,
+          advised by Hao Li <br />
+          [2019/01/24] I gave an invited
+          <a
+            href="https://ps.is.tuebingen.mpg.de/talks/pose-trajectory-extraction-and-novel-view-synthesis-from-visual-content"
+            >talk</a
+          >
+          at MPI for Intelligent Systems, Perceiving Systems department.
+          <br />
+        </div>
+        <br /><br />
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 0px 20px;width:20%;vertical-align:middle"><img src="image/camera.png" width="150" height="150"></td>
-            <td style="padding:0px 20px 20px 20px;width:80%;vertical-align:middle">
-              <papertitle>Raspberry Pi Camera with Ink Screen</papertitle>
-              <br>
-              <em>July</em>, &nbsp;2021&nbsp;
-              <br>
-              <a href="https://www.bilibili.com/video/BV1Ew411d7Wh/?spm_id_from=333.999.0.0&vd_source=86d8dcac0057c7ea489aea8846dc4434">Video</a>
-              <br>
-              <font color='gray'>A camera made by a Raspberry Pi and a black, white and red ink screen. It can be used to take photos with special effects.</font>
+        <h1 id="citation">
+          Publications
+          <a
+            style="color: #4285f4"
+            href="https://scholar.google.com/citations?hl=zh-CN&user=9zAA9rQAAAAJ"
+          >
+            <span class="ai ai-google-scholar-square"></span>
+          </a>
+        </h1>
+
+        Representative works are
+        <span style="background-color: lightgoldenrodyellow">highlighted</span>
+        &nbsp;&nbsp; (*/&#8224; equal contribution, # corresponding author)<br />
+
+        <br />
+
+        <table class="pub_table">
+          <tr id="xiu2024puzzleavatar" class="focus">
+            <td class="pub_td1">
+              <img src="./about/puzzleavatar.jpg" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=YuliangXiu&repo=PuzzleAvatar&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
             </td>
-          </tr>
-        </tbody></table>
-        
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Experiences</heading>
-            </td>
-          </tr>
-          <tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-              <a href="https://www.imperial.ac.uk/continuing-professional-development/short-courses/summer-schools/winterschool/imperial-data-science-online-winter-school/">
-                <papertitle>Imperial Data Science Winter School 2023</papertitle>
+            <td class="pub_td2">
+              <b
+                >PuzzleAvatar: Assembling 3D Avatars from Personal
+                Albums&nbsp;</b
+              ><br />
+
+              <br />
+              <u>Yuliang Xiu</u>,
+              <a href="https://judyye.github.io/">Yufei Ye</a>,
+              <a href="http://itszhen.com/">Zhen Liu</a>,
+              <a href="https://dtzionas.com">Dimitrios Tzionas</a>,
+              <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i>
+                  <strong style="color: brown"
+                    >ACM Transactions On Graphics (SIGGRAPH Asia), 2024</strong
+                  ></i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;xiu2024puzzleavatar&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://puzzleavatar.is.tue.mpg.de"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2405.14869"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
               </a>
-              <br>
-              <em>16th January - 8th February</em>, &nbsp;2023&nbsp;
-              <br>
-              <a href="https://github.com/JiaoKM/NLP_CORD19">Code</a>
-<!--               &nbsp;/&nbsp;<a href="https://github.com/apexrl/EBIL-torch">Code</a> -->
-              <br>
-              <font color='gray'>In the winter school, every group should completed a CV and a NLP project. I mainly participated in the NLP project. In the natural language processing project, I extracted titles, abstracts and articles from the COVID-19 Open Research Dataset (CORD-19) and mined data and knowledge from these words. There were 4 steps to complete this project: Scan all JSON files in the given dataset and extract texts from relevant parts; Use different tokenizers to traverse the extracted texts and segment the texts into words; Use different models to build word representations for each word; Display the knowledge and data mined from the word representations through various methods.</font>
-<!--               <p>This paper subsumes our CVPR 2014 paper.</p> -->
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-              <papertitle>Teaching Assitant of C++ Programming Course</papertitle>
-              <br>
-              <em>Fall Semester</em>, &nbsp;2021 & 2022&nbsp;
-              <br>
-              <a href="https://github.com/JiaoKM/Edge_Detect_Qt">Code</a>
-<!--               &nbsp;/&nbsp;<a href="https://github.com/apexrl/EBIL-torch">Code</a> -->
-              <br>
-              <font color='gray'>In the past two fall semesters, I worked as a teacher assistant in the C++ programming course (CS1501). I helped the teacher check the homework and answer questions from students. I also participated in the design of course project about image edge detecting and the source code of the demo is showed here.</font>
-<!--               <p>This paper subsumes our CVPR 2014 paper.</p> -->
-            </td>
-          </tr>
-        </tbody></table>
-        
-        
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Education</heading>
-            </td>
-          </tr>
-          <tr>
-        </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 20px 20px;width:75%;vertical-align:middle">
-              <b>Lund University</b>, Lund, Sweden
-              <br>
-              MSc in Virtual Reality and Augmented Reality • Sep. 2024 to Jun. 2026 (expected)
-              </br>
+              <a class="box" href="https://youtu.be/0hpXH2tVPk4"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+              <!-- <a class="box" href="https://zhuanlan.zhihu.com/p/626295986"
+                ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
+              > -->
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;xiu2024puzzleavatar&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="puzzleavatarbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span
+                id="puzzleavatarabs"
+                style="display: none; margin-top: 10px"
+              ></span>
             </td>
-            <td style="padding:0px 20px 0px 20px;width:10%;vertical-align:middle"><img src="image/lund_logo.png" width="75" height="75"></td>
           </tr>
-        </tbody></table>
+
+          <tr id="ye2024stablenormal">
+            <td class="pub_td1">
+              <img src="./about/stablenormal.jpg" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=Stable-X&repo=StableNormal&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >StableNormal: Reducing Diffusion Variance for Stable and Sharp
+                Normal&nbsp;</b
+              ><br />
+              <a
+                href="https://huggingface.co/spaces/Stable-X/StableNormal"
+                style="padding-left: 0.5rem; vertical-align: top"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-StableNormal-orange"
+              /></a>
+              <a
+                href="https://huggingface.co/spaces/Stable-X/StableRecon"
+                style="padding-left: 0.5rem; vertical-align: top"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-StableRecon-orange"
+              /></a>
+              <a
+                href="https://huggingface.co/spaces/Stable-X/StableDelight"
+                style="padding-left: 0.5rem; vertical-align: top"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-StableDelight-orange"
+              /></a>
+              <br /><br />
+              <a href="https://github.com/hugoycj">Chongjie Ye*</a>,
+              <a href="https://lingtengqiu.github.io/">Lingteng Qiu*</a>,
+              <a href="https://github.com/gxd1994">Xiaodong Gu</a>,
+              <a href="https://github.com/hitsz-zuoqi">Qi Zuo</a>,
+              <a href="https://yushuang-wu.github.io/">Yushuang Wu</a>,
+              <a
+                href="https://scholar.google.com/citations?user=GHOQKCwAAAAJ&hl=zh-CN&oi=ao"
+                >Zilong Dong</a
+              >,<br />
+              <a href="https://research.cs.washington.edu/istc/lfb/"
+                >Leifeng Bo</a
+              >, <u>Yuliang Xiu#</u>,
+              <a href="https://gaplab.cuhk.edu.cn/">Xiaoguang Han#</a>
+              <br />
+              (* equal contribution, # corresponding author)
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i>
+                  <strong style="color: brown"
+                    >ACM Transactions On Graphics (SIGGRAPH Asia), 2024</strong
+                  ></i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;ye2024stablenormal&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://stable-x.github.io/StableNormal/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2406.16864"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+
+              <a class="box" href="https://youtu.be/sylXTxG_U2U"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;ye2024stablenormal&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="stablenormalbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span
+                id="stablenormalabs"
+                style="display: none; margin-top: 10px"
+              ></span>
+            </td>
+          </tr>
+          <tr id="liu2023boft">
+            <td class="pub_td1">
+              <img src="./about/boft.png" />
+              <a
+                href="https://huggingface.co/docs/peft/main/en/conceptual_guides/oft"
+                ><img
+                  style="
+                    height: 20px;
+                    width: 140px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                  "
+                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-PEFT-orange"
+              /></a>
+            </td>
+            <td class="pub_td2">
+              <b
+                >Parameter-Efficient Orthogonal Finetuning via Butterfly
+                Factorization&nbsp;</b
+              >
+
+              <br /><br />
+              <a href="https://wyliu.com/">Weiyang Liu*</a>,
+              <a href="https://github.com/Zeju1997">Zeju Qiu*</a>,
+              <a href="https://yfeng95.github.io/">Yao Feng&#8224;</a>,
+              <u>Yuliang Xiu&#8224;</u>,
+              <a href="https://yuxuan-xue.com/">Yuxuan Xue&#8224;</a>,
+              <a href="https://yulonghui.github.io/">Longhui Yu&#8224;</a>,
+              <br /><a href="https://ps.is.mpg.de/person/hfeng">Haiwen Feng</a>,
+              <a href="http://itszhen.com/">Zhen Liu</a>,
+              <a href="https://sites.google.com/view/juyeonheo">Juyeon Heo</a>,
+              <a href="https://pengsongyou.github.io/">Songyou Peng</a>,
+              <a href="https://ydwen.github.io/">Yandong Wen</a>,<br />
+              <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>,
+              <a href="https://mlg.eng.cam.ac.uk/adrian/">Adrian Weller</a>,
+              <a href="https://is.mpg.de/~bs">Bernhard Schölkopf</a>
+              <br />(*/&#8224; equal contribution)<br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >International Conference on Learning Representations (<strong
+                    style="color: brown"
+                    >ICLR 2024</strong
+                  >)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;liu2023boft&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="http://boft.wyliu.com/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <!-- <a href="https://youtu.be/SjzQ6158Pho"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i>Video</a
+              >[<a href="https://youtu.be/SjzQ6158Pho">En</a>,
+              <a
+                href="https://www.bilibili.com/video/BV1Ju411J7XF/?vd_source=4fa43a1b25f1451c4212f214517d8932"
+                >中</a
+              >]&nbsp; -->
+
+              <a class="box" href="https://arxiv.org/abs/2311.06243"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;liu2023boft&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="boftbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="boftabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+          <tr id="liu2023gshell">
+            <td class="pub_td1">
+              <img src="./about/gshell.jpeg" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=lzzcd001&repo=GShell&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >Ghost on the Shell: An Expressive Representation of General 3D
+                Shapes&nbsp;</b
+              >
+
+              <br /><br />
+              <a href="http://itszhen.com/">Zhen Liu</a>,
+              <a href="https://yfeng95.github.io/">Yao Feng&#8224;</a>,
+              <u>Yuliang Xiu&#8224;</u>,
+              <a href="https://wyliu.com/">Weiyang Liu</a>,
+              <a href="https://liampaull.ca/">Liam Paull</a>,
+              <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>,
+              <a href="https://is.mpg.de/~bs">Bernhard Schölkopf</a>
+              <br />(&#8224; equal contribution)<br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >International Conference on Learning Representations (<strong
+                    style="color: brown"
+                    >ICLR 2024</strong
+                  >, <strong style="color: brown">Oral</strong>)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;liu2023gshell&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://gshell3d.github.io/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <!-- <a href="https://youtu.be/SjzQ6158Pho"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i>Video</a
+              >[<a href="https://youtu.be/SjzQ6158Pho">En</a>,
+              <a
+                href="https://www.bilibili.com/video/BV1Ju411J7XF/?vd_source=4fa43a1b25f1451c4212f214517d8932"
+                >中</a
+              >]&nbsp; -->
+
+              <a class="box" href="https://arxiv.org/abs/2310.15168"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;liu2023gshell&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="gshellbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span
+                id="gshellabs"
+                style="display: none; margin-top: 10px"
+              ></span>
+            </td>
+          </tr>
+          <tr id="huang2023tech" class="focus">
+            <td class="pub_td1">
+              <video autoplay loop muted>
+                <source src="./about/tech.mp4" type=video/mp4>
+              </video>
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=huangyangyi&repo=TeCH&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >TeCH: Text-guided Reconstruction of Lifelike Clothed
+                Humans&nbsp;</b
+              >
+              <br /><br />
+              <a href="https://huangyangyi.github.io/">Yangyi Huang*</a>,
+              <u>Yuliang Xiu*</u>, <a href="https://xyyhw.top/">Hongwei Yi*</a>,
+              <a href="https://tingtingliao.github.io/">Tingting Liao</a>,
+              <a href="https://me.kiui.moe/">Jiaxiang Tang</a>,
+              <a href="http://www.cad.zju.edu.cn/home/dengcai/">Deng Cai</a>,
+              <a href="https://justusthies.github.io/">Justus Thies</a>
+              <br />(*equal contribution)<br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >International Conference on 3D Vision 2024 (<strong
+                    style="color: brown"
+                    >3DV 2024</strong
+                  >)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;huang2023tech&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://huangyangyi.github.io/TeCH"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://youtu.be/SjzQ6158Pho"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i>Video</a
+              >
+
+              <a class="box" href="https://arxiv.org/abs/2308.08545"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;huang2023tech&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="techbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="techabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+          <tr id="liao2023tada">
+            <td class="pub_td1">
+              <video autoplay loop muted>
+                <source src="./about/tada-all.mp4" type=video/mp4>
+              </video>
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=tingtingliao&repo=TADA&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b>TADA! Text to Animatable Digital Avatars&nbsp;</b>
+
+              <br /><br />
+              <a href="https://tingtingliao.github.io/">Tingting Liao*</a>,
+              <a href="https://xyyhw.top/">Hongwei Yi*</a>, <u>Yuliang Xiu</u>,
+              <a href="https://me.kiui.moe/">Jiaxiang Tang</a>,
+              <a href="https://huangyangyi.github.io/">Yangyi Huang</a>,
+              <a href="https://justusthies.github.io/">Justus Thies</a>,
+              <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
+              <br />(*equal contribution)
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >International Conference on 3D Vision 2024 (<strong
+                    style="color: brown"
+                    >3DV 2024</strong
+                  >)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;liao2023tada&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://tada.is.tue.mpg.de/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2308.10899"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a class="box" href="https://youtu.be/w5rdcPQWktE"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i>Video</a
+              >
+
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;liao2023tada&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="tadabib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="tadaabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+          <tr id="yang2023dif">
+            <td class="pub_td1">
+              <img src="./about/DIF.png" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=psyai-net&repo=D-IF_release&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >D-IF: Uncertainty-aware Human Digitization via Implicit
+                Distribution Field&nbsp;</b
+              >
+              <br /><br />
+              <a href="https://github.com/yxt7979">Xueting Yang*</a>, Yihao
+              Luo*, <u>Yuliang Xiu</u>, Wei Wang, Hao Xu,
+              <a
+                href="https://scholar.google.com/citations?user=JHvyYDQAAAAJ&hl=zh-CN"
+                >Zhaoxin Fan</a
+              >
+              <br />(*equal contribution)
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i>
+                  International Conference on Computer Vision 2023 (<strong
+                    style="color: brown"
+                    >ICCV 2023</strong
+                  >)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;yang2023dif&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://yxt7979.github.io/idf/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2308.08857"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;yang2023dif&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre id="difbib" xml:space="preserve" style="display: none"></pre>
+              <span id="difabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+          <tr id="xiu2023econ" class="focus">
+            <td class="pub_td1">
+              <img src="./about/econ.gif" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=yuliangxiu&repo=ECON&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >ECON: Explicit Clothed humans Optimized via Normal
+                integration&nbsp;</b
+              ><br />
+              <a
+                href="https://huggingface.co/spaces/Yuliang/ECON"
+                style="padding-left: 0.5rem; vertical-align: top"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ECON-orange"
+              /></a>
+              <a
+                href="https://colab.research.google.com/drive/1YRgwoRCZIrSB2e7auEWFyG10Xzjbrbno?usp=sharing"
+                style="padding-left: 0.5rem; vertical-align: top"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://colab.research.google.com/assets/colab-badge.svg"
+                  alt="Google Colab"
+              /></a>
+              <a
+                href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-windows.md"
+              >
+                <img
+                  style="
+                    height: 20px;
+                    outline: 1px solid grey;
+                    border-radius: 5pt;
+                    margin-top: 0.5em;
+                    margin-left: 0.5em;
+                  "
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Unofficial_Windows_logo_variant_-_2002%E2%80%932012_%28Multicolored%29.svg/1161px-Unofficial_Windows_logo_variant_-_2002%E2%80%932012_%28Multicolored%29.svg.png"
+                />
+              </a>
+              <a
+                href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-docker.md"
+              >
+                <img
+                  style="
+                    height: 20px;
+                    outline: 1px solid grey;
+                    border-radius: 5pt;
+                    margin-top: 0.5em;
+                    margin-left: 0.5em;
+                  "
+                  src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"
+                />
+              </a>
+              <a href="https://carlosedubarreto.gumroad.com/l/CEB_ECON">
+                <img
+                  style="
+                    height: 20px;
+                    outline: 1px solid grey;
+                    border-radius: 5pt;
+                    margin-top: 0.5em;
+                    margin-left: 0.5em;
+                  "
+                  src="https://www.nicepng.com/png/detail/343-3436343_blender-logo-png.png"
+                />
+              </a>
+
+              <br /><br />
+              <u>Yuliang Xiu</u>,
+              <a href="https://is.mpg.de/~jyang">Jinlong Yang</a>,
+              <a href="https://hoshino042.github.io/homepage/">Xu Cao</a>,
+              <a href="https://dtzionas.com">Dimitrios Tzionas</a>,
+              <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i>
+                  Computer Vision and Pattern Recognition 2023 (<strong
+                    style="color: brown"
+                    >CVPR 2023</strong
+                  >, <strong style="color: brown">Highlight</strong>)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;xiu2023econ&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://xiuyuliang.cn/econ/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2212.07422"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+
+              <a class="box" href="https://youtu.be/5PEd_p90kS0"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+              <a class="box" href="https://zhuanlan.zhihu.com/p/626295986"
+                ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;xiu2023econ&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="econbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="econabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+          <tr id="liao2023car">
+            <td class="pub_td1">
+              <img src="./about/car.gif" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=TingtingLiao&repo=CAR&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >High-Fidelity Clothed Avatar Reconstruction from a Single Image
+                &nbsp;</b
+              >
+
+              <br /><br />
+              <a href="https://tingtingliao.github.io/">Tingting Liao</a>,
+              <a
+                href="https://scholar.google.com/citations?user=-i9dCxYAAAAJ&hl=zh-CN"
+                >Xiaomei Zhang</a
+              >, <u>Yuliang Xiu</u>,
+              <a href="https://xyyhw.top/">Hongwei Yi</a>, ...,
+              <!-- <a
+                href="https://scholar.google.com/citations?user=FpuBRMwAAAAJ&hl=en"
+                >Xudong Liu</a
+              >, <a href="http://maple-lab.net/gqi/">Guo-Jun Qi</a>,
+              <a href="https://yzhang2016.github.io/">Yong Zhang</a>,
+              <a href="https://xuanwangvc.github.io/">Xuan Wang</a>, -->
+              <a href="https://xiangyuzhu-open.github.io/homepage/"
+                >Xiangyu Zhu</a
+              >,
+              <a href="http://www.cbsr.ia.ac.cn/users/zlei/">Zhen Lei</a>
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i>
+                  Computer Vision and Pattern Recognition 2023 (<strong
+                    style="color: brown"
+                    >CVPR 2023</strong
+                  >)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;liao2023car&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://tingtingliao.github.io/CAR/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2304.03903"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;liao2023car&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre id="carbib" xml:space="preserve" style="display: none"></pre>
+              <span id="carabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+          <tr id="fang2022alphapose">
+            <td class="pub_td1">
+              <img src="./about/alphapose.gif" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=MVIG-SJTU&repo=AlphaPose&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >AlphaPose: Whole-Body Regional Multi-Person Pose Estimation and
+                Tracking in Real-Time&nbsp;</b
+              >
+              <br /><br />
+              <a href="https://fang-haoshu.github.io/">Hao-shu Fang*</a>,
+              <a href="https://jeffli.site/">Jiefeng Li*</a>, Hongyang Tang,
+              <a href="https://www.isdas.cn/">Chao Xu</a>, Haoyi Zhu,
+              <u>Yuliang Xiu</u>,
+              <a href="https://dirtyharrylyl.github.io/">Yong-lu Li</a>,
+              <a href="https://www.mvig.org/">Cewu Lu</a>
+              <br />(*equal contribution)
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >IEEE Transactions on Pattern Analysis and Machine
+                  Intelligence (<strong style="color: brown">TPAMI 2022</strong
+                  >)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;fang2022alphapose&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://github.com/MVIG-SJTU/AlphaPose"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2211.03375"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a
+                class="box"
+                href="https://www.youtube.com/watch?v=Z2WPd59pRi8&t=4s"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;fang2022alphapose&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="alphaposebib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span
+                id="alphaposeabs"
+                style="display: none; margin-top: 10px"
+              ></span>
+            </td>
+          </tr>
+
+          <tr id="gao2022dart">
+            <td class="pub_td1">
+              <marquee behavior="alternate" direction="left" scrollamount="3">
+                <img src="./about/dart.png" height="120" width="160" />
+              </marquee>
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=DART2022&repo=DART&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b
+                >DART: Articulated Hand Model with Diverse Accessories and Rich
+                Textures&nbsp;</b
+              >
+              <br /><br />
+              <a href="https://tomguluson92.github.io/">Daiheng Gao*</a>,
+              <u>Yuliang Xiu*</u>,
+              <a href="https://kailinli.top/">Kailin Li*</a>,
+              <a href="https://lixiny.github.io/">Lixin Yang*</a>,...,
+              <a href="https://www.mvig.org/">Cewu Lu</a>,
+              <a href="https://www.cs.sfu.ca/~pingtan/">Ping Tan</a>
+              <br />
+              (*equal contribution)<br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >Neural Information Processing Systems (<strong
+                    style="color: brown"
+                    >NeurIPS 2022</strong
+                  >
+                  <i style="color: brown">-Datasets and Benchmarks Track</i>)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;gao2022dart&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://dart2022.github.io/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2210.07650"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a class="box" href="https://youtu.be/VvlUYe-9b7U"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;gao2022dart&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="dartbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="dartabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+
+          <tr id="xiu2021icon" class="focus">
+            <td class="pub_td1">
+              <img src="./about/icon.jpeg" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=yuliangxiu&repo=ICON&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b>ICON: Implicit Clothed humans Obtained from Normals&nbsp;</b>
+              <br /><a
+                href="https://huggingface.co/spaces/Yuliang/ICON"
+                style="padding-left: 0.5rem"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ICON-orange"
+              /></a>
+              <a
+                href="https://colab.research.google.com/drive/1-AWeWhPvCTBX0KfMtgtMk10uPU05ihoA?usp=sharing"
+                style="padding-left: 0.5rem"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://colab.research.google.com/assets/colab-badge.svg"
+                  alt="Google Colab"
+              /></a>
+              <br /><br />
+              <u>Yuliang Xiu</u>,
+              <a href="https://is.mpg.de/~jyang">Jinlong Yang</a>,
+              <a href="https://dtzionas.com">Dimitrios Tzionas</a>,
+              <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >Computer Vision and Pattern Recognition 2022 (<strong
+                    style="color: brown"
+                    >CVPR 2022</strong
+                  >)</i
+                >
+              </div>
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;xiu2021icon&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://icon.is.tue.mpg.de"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2112.09127"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a
+                class="box"
+                href="https://www.icloud.com.cn/keynote/01dxNGQJ8mBIIUG6i8O61_UCA#ICON-CVPR2022"
+                ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+                >Slides&nbsp;</a
+              >
+              <a class="box" href="https://youtu.be/hZd6AYin2DE"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+              <a class="box" href="https://zhuanlan.zhihu.com/p/477379718"
+                ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;xiu2021icon&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="iconbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="iconabs" style="display: none; margin-top: 10px"></span>
+            </td>
+          </tr>
+
+          <tr id="li2020monoport">
+            <td class="pub_td1">
+              <img src="./about/monoport.png" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=Project-Splinter&repo=MonoPort&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b>Monocular Real-Time Volumetric Performance Capture&nbsp;</b>
+              <br /><br />
+              <a href="http://www.liruilong.cn/">Ruilong Li*</a>,
+              <u>Yuliang Xiu*</u>,
+              <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a>,
+              <a href="https://zeng.science/">Zeng Huang</a>,
+              <a href="https://kyleolsz.github.io/">Kyle Olszewski</a>,
+              <a href="https://www.hao-li.com/">Hao Li</a><br />
+              (*equal contribution)
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >European Conference on Computer Vision (<strong
+                    style="color: brown"
+                    >ECCV 2020</strong
+                  >)</i
+                >
+              </div>
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;li2020monoport&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="./monoport"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/2007.13988"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+
+              <a class="box" href="https://youtu.be/fQDsYVE7GtQ"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+              <a
+                class="box"
+                href="https://www.zhihu.com/question/415544564/answer/1436374579"
+                ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;li2020monoport&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex
+                <?php $paperid="9890425650052236496" ; include
+                'php/citation.php';?>&nbsp;
+              </a>
+              <pre
+                id="monoportbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span
+                id="monoportabs"
+                style="display: none; margin-top: 10px"
+              ></span>
+            </td>
+          </tr>
+
+          <tr id="li2020monoport_rtl">
+            <td class="pub_td1">
+              <img src="./about/monoport.gif" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=Project-Splinter&repo=MonoPort&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b>Volumetric Human Teleportation&nbsp;</b><br /><br />
+              <a href="http://www.liruilong.cn/">Ruilong Li</a>,
+              <a href="https://kyleolsz.github.io/">Kyle Olszewski</a>,
+              <u>Yuliang Xiu</u>,
+              <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a>,
+              <a href="https://zeng.science/">Zeng Huang</a>,
+              <a href="https://www.hao-li.com/">Hao Li</a>
+
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  ><strong style="color: brown"
+                    >SIGGRAPH Real-Time Live 2020</strong
+                  >
+                  (<strong style="color: brown">Best in Show Award</strong>)</i
+                >
+              </div>
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;li2020monoport_rtl&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="./monoport"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a
+                class="box"
+                href="https://dl.acm.org/doi/abs/10.1145/3407662.3407756"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a class="box" href="https://youtu.be/THxYxcEnKFk"
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >
+
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;li2020monoport_rtl&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex
+                <?php $paperid="17210272119514281912" ; include
+                'php/citation.php';?>&nbsp;
+              </a>
+              <pre
+                id="monoportrtlbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span
+                id="monoportrtlabs"
+                style="display: none; margin-top: 10px"
+              ></span>
+            </td>
+          </tr>
+
+          <tr id="xiu2018poseflow">
+            <td class="pub_td1">
+              <img src="./about/posetrack.gif" />
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=yuliangxiu&repo=PoseFlow&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="200"
+                height="20"
+              ></iframe>
+            </td>
+            <td class="pub_td2">
+              <b>Pose Flow: Efficient Online Pose Tracking&nbsp;</b><br /><br />
+              <u>Yuliang Xiu</u>, <a href="https://jeffli.site/">Jiefeng Li</a>,
+              <a href="https://why2011btv.github.io">Haoyu Wang</a>, Yinghong
+              Fang, <a href="http://mvig.org">Cewu Lu</a>
+
+              <br />
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <i
+                  >British Machine Vision Conference (<strong
+                    style="color: brown"
+                    >BMVC 2018</strong
+                  >)</i
+                >
+              </div>
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;xiu2018poseflow&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a class="box" href="https://arxiv.org/abs/1802.00977"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+              </a>
+              <a
+                class="box"
+                href="https://www.zhihu.com/question/271211525/answer/554960781"
+                ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;xiu2018poseflow&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex
+                <?php $paperid="5164850732214894798" ; include
+                'php/citation.php';?>&nbsp;
+              </a>
+              <pre
+                id="poseflowbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span
+                id="poseflowabs"
+                style="display: none; margin-top: 10px"
+              ></span>
+            </td>
+          </tr>
+          <!-- <tr id="liu2018posehd">
+            <td class="pub_td1">
+              <img src="./about/tu.png" />
+            </td>
+            <td class="pub_td2">
+              <b
+                >PoseHD: Boosting Human Detectors using Human Pose
+                Information</b
+              ><br /><br />
+              <a href="http://zhijianliu.com/">Zhijian Liu</a>,
+              <a>Bowen Pan</a>, <u>Yuliang Xiu</u>,
+              <a href="http://mvig.org">Cewu Lu</a>
+              <br />
+              <i
+                >AAAI Conference on Artificial Intelligence (<strong
+                  style="color: brown"
+                  >AAAI 2018</strong
+                >)</i
+              >
+              <br /><br />
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;liu2018posehd&#39;)"
+                class="toggleabs box"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a href="https://readpaper.com/paper/2788996589"
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i
+                >Paper&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;liu2018posehd&#39;)"
+                class="togglebib box"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex
+                <?php $paperid="14499296953115044554" ; include
+                        'php/citation.php';?>&nbsp;
+              </a>
+              <pre
+                id="posehdbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="posehdabs" style="display: none; margin-top: 10px;"></span>
+            </td>
+          </tr> -->
+        </table>
+
+        <h1 id="mentoring">Endless AI @ Westlake</h1>
+
+        <ul>
+          <li>
+            <strong>Research Assistants</strong>
+          </li>
+          <ul>
+            <li>
+              <a href="https://rover-xingyu.github.io/">Xingyu Chen</a>, Xi'an
+              Jiao Tong University, co-advised with
+              <a href="https://apchenstu.github.io/">Anpei Chen</a>
+            </li>
+            <li>
+              <a href="https://fanegg.github.io/">Yue Chen</a>, Xi'an Jiao Tong
+              University, co-advised with
+              <a href="https://virtualhumans.mpi-inf.mpg.de/"
+                >Gerard Pons-Moll</a
+              >
+            </li>
+            <li>
+              <a href="https://xiaobenli00.github.io/">Xiaoben Li</a>,
+              ShanghaiTech University, co-advised with
+              <a href="https://wangjingbo1219.github.io/">Jingbo Wang</a>
+            </li>
+            <li>
+              <a href="https://net-maker.github.io/">Jiaxin Wang</a>, Hangzhou
+              Dianzi University, co-advised with
+              <a href="https://apchenstu.github.io/">Anpei Chen</a>
+            </li>
+            <li>
+              <a href="https://wanglongzju.github.io/wanglong.github.io/"
+                >Long Wang</a
+              >, Zhejiang University, co-advised with
+              <a href="https://timx.me/">Tim Z. Xiao</a>
+            </li>
+            <li>
+              <a href="https://yulonghui.github.io/">Longhui Yu</a>, Peking
+              University, co-advised with
+              <a href="https://wyliu.com/">Weiyang Liu</a> and
+              <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a>
+            </li>
+          </ul>
+          <li><strong>Visiting Students</strong></li>
+          <ul>
+            <li>
+              <a href="https://github.com/zcai0612">Zeyu Cai</a>, Hong Kong
+              University of Science and Technology (Guang Zhou), co-advised with
+              <a href="https://itszhen.com/">Zhen Liu</a>
+            </li>
+            <li>
+              <a href="">He Guo</a>, Huazhong University of Science and
+              Technology, co-advised with
+              <a href="https://wyliu.com/">Weiyang Liu</a> and
+              <a href="https://ydwen.github.io/">Yandong Wen</a>
+            </li>
+            <li>
+              <a href="https://boqian-li.github.io/">Boqian Li</a>, Huazhong
+              University of Science and Technology, co-advised with
+              <a href="https://havenfeng.github.io/">Haven Feng</a>
+            </li>
+
+            <li>
+              <a href="https://kevinxu02.github.io/splatfactow/">Congrong Xu</a
+              >, ShanghaiTech University, co-advised with
+              <a href="https://apchenstu.github.io/">Anpei Chen</a>
+            </li>
+          </ul>
+          <li><strong>External Collaborators</strong></li>
+          <ul>
+            <li>
+              <a
+                href="https://scholar.google.com/citations?user=2qsqnJEAAAAJ&hl=en"
+                >Siyuan Bian</a
+              >, Shanghai Jiao Tong University, co-advised with
+              <a href="https://yfeng95.github.io/">Yao Feng</a>
+            </li>
+
+            <li>
+              <a href="https://tingtingliao.github.io/">Tingting Liao</a>,
+              Mohamed bin Zayed University of Artificial Intelligence,
+              co-advised with <a href="https://www.hao-li.com/">Hao Li</a>
+            </li>
+            <li><a href="">Jingyi Wu</a>, Fudan University</li>
+          </ul>
+        </ul>
+
         
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px 20px 20px 20px;width:75%;vertical-align:middle">
-              <b>Shanghai Jiao Tong University</b>, Shanghai, China
-              <br>
-              B.E. in Electronic Science and Technology • Sep. 2020 to Jun. 2024
-              </br>
-            </td>
-            <td style="padding:0px 20px 0px 20px;width:10%;vertical-align:middle"><img src="image/SJTU_logo.png" width="75" height="75"></td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px">
-                <p font-size:small;="">
-                    <br>
-                    <br>
-                    </p><div style="float:left;">
-                        Updated at Nov. 2024
-                    </div>
-                    <div style="float:right;">
-                        Thanks <a href="https://jonbarron.info">Jon Barron</a> for sharing this marvelous template. Find the code of shown gif <a href="https://github.com/JiaoKM/Jelly_Water_Tetris">here</a>.
-                    </div>
-                    <br>
-                    <br>        
-                <p></p>                           
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
-</body>
-  
+
+        <!-- <strong style="color: red"
+          >I am still looking for self-motivated interns to work on "interesting yet challenging" projects, please contact me via
+         <a href="mailto: yuliang.xiu@tue.mpg.de">Email</a>.</strong> -->
+
+        <h1>
+          Invited Talks
+          <a
+            style="color: #ff0000"
+            href="https://www.youtube.com/channel/UCicL0Co86tGbzoV2heWiEaA"
+          >
+            <span class="fa-brands fa-youtube"></span>
+          </a>
+          <a style="color: #08a4d4" href="https://space.bilibili.com/86857008">
+            <span class="fa-brands fa-bilibili"></span>
+          </a>
+        </h1>
+        <ul>
+          <li>
+            <strong
+              >PuzzleAvatar: Assembling 3D Avatars from Personal Albums</strong
+            >
+            [<a
+              href="https://www.dropbox.com/scl/fi/kwotrodv3ugkejj19wod4/Tsinghua-AIR.pdf?rlkey=32p6i47a99n22lg74bpagtpus&st=3upijhxq&dl=0"
+              ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+              >Slides (215MB)</a
+            >]
+          </li>
+          <details>
+            <summary>
+              <em
+                ><strong style="color: brown">CMU, Tsinghua, GAMES</strong></em
+              >
+            </summary>
+            <ul>
+              <em>
+                <li>
+                  <strong>Carnegie Mellon Graphics Lab</strong>, hosted by
+                  <a href="https://www.cs.cmu.edu/~minchenl/">Minchen Li</a>
+                </li>
+                <li>
+                  <strong>GAMES Webinar</strong>, hosted by
+                  <a href="https://daodaofr.github.io/">Yichao Yan</a>
+                </li>
+                <li>
+                  <strong
+                    >Tsinghua University, Institute for Al Industry Research
+                    (AIR)</strong
+                  >, hosted by
+                  <a href="https://sites.google.com/view/fromandto">Hao Zhao</a>
+                </li>
+              </em>
+            </ul>
+          </details>
+          <li>
+            <strong>Democratizing Human Digitization</strong> [<a
+              href="https://www.dropbox.com/scl/fi/ek1sigv3qx17wx6vmjlgk/Westlake-Yuliang.pdf?rlkey=2wu781hg441oxha8phvqwesen&dl=0"
+              ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+              >Slides (122MB)</a
+            >]
+          </li>
+          <details>
+            <summary>
+              <em
+                ><strong style="color: brown"
+                  >TAMU, Westlake, ZJU, JHU</strong
+                ></em
+              >
+            </summary>
+            <ul>
+              <em>
+                <li>
+                  <strong>Texas A&M University</strong>, Guest Lecture at CSCE
+                  689 Special Topics: Generative AI, hosted by
+                  <a href="https://vztu.github.io/">Zhengzhong Tu</a>
+                </li>
+                <li>
+                  <strong>Westlake University</strong>, hosted by
+                  <a href="https://en.westlake.edu.cn/faculty/xiaofei-li.html"
+                    >Xiaofei Li</a
+                  >
+                </li>
+                <li>
+                  <strong>Zhejiang University</strong>, hosted by
+                  <a href="https://tydusky.github.io/">Tianyu Du</a>
+                </li>
+                <li>
+                  <strong>Johns Hopkins University</strong>, hosted by
+                  <a href="https://www.zongweiz.com/">Zongwei Zhou</a> and
+                  <a href="https://www.cs.jhu.edu/~yyliu/">Yaoyao Liu</a>
+                </li>
+              </em>
+            </ul>
+          </details>
+          <li><strong>Human Digitization from Pixels and Tokens</strong></li>
+          <details>
+            <summary>
+              <em
+                ><strong style="color: brown"
+                  >Google Research, Cornell, Tsinghua, IDEA</strong
+                ></em
+              >
+            </summary>
+            <ul>
+              <em>
+                <li>
+                  <strong>Google Research</strong>, hosted by
+                  <a
+                    href="https://scholar.google.com/citations?user=tJlD24EAAAAJ&hl=de"
+                    >Thiemo Alldieck</a
+                  >
+                </li>
+                <li>
+                  <strong>Cornell University</strong>, hosted by
+                  <a href="https://ruolinye.care/">Ruolin Ye</a>
+                </li>
+                <li>
+                  <strong>Tsinghua University</strong>, Institute for
+                  Interdisciplinary Information Sciences (IIIS), hosted by
+                  <a href="https://ericyi.github.io/">Li Yi</a>
+                </li>
+                <li>
+                  <strong>International Digital Economy Academy (IDEA)</strong>,
+                  Computer Vision and Robotics, hosted by
+                  <a href="https://ailingzeng.site/">Ailing Zeng</a>
+                </li>
+              </em>
+            </ul>
+          </details>
+          <li>
+            <strong
+              >Towards Large-scale Human Digitization: Implicit or Explicit?
+            </strong>
+            [<a
+              href="https://www.dropbox.com/s/7ncqw60nkr8g7ud/ECON%26ICON.pdf?dl=0"
+              ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+              >Slides (75MB)</a
+            >,
+            <a
+              href="https://www.bilibili.com/video/BV1NM4y1B7UN/?spm_id_from=333.999.list.card_archive.click&vd_source=4fa43a1b25f1451c4212f214517d8932"
+              ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+              >Video&nbsp;(30 min)</a
+            >]
+            <details>
+              <summary>
+                <em
+                  ><strong style="color: brown"
+                    >Taichi, PKU, CUHK, UCLA, ETH Zurich, SDU, CAS, Shanghai AI
+                    Lab, BIGAI, Huawei</strong
+                  ></em
+                >
+              </summary>
+              <ul>
+                <li>
+                  <em>
+                    <strong>Taichi Graphics(太极大讲堂)</strong>, hosted by
+                    <a href="https://tiantianliu.cn/">Tiantian Liu</a> and
+                    <a href="https://twitter.com/yanqingdw">Qing Yan</a>
+                  </em>
+                </li>
+                <li>
+                  <em
+                    ><strong>Huawei (CG&XR武林大会)</strong>, hosted by Shiqi
+                    Zhou
+                  </em>
+                </li>
+                <li>
+                  <em
+                    ><strong>Huawei (稼先社区&藤蔓技术论坛)</strong>, hosted by
+                    Tao Bai
+                  </em>
+                </li>
+                <li>
+                  <em
+                    ><strong>ETH Zurich</strong>, Photogrammetry and Remote
+                    Sensing Lab, hosted by
+                    <a href="https://shengyuh.github.io/">Shengyu Huang</a>
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>BIGAI</strong>, Beijing Institute for General
+                    Artifical Intelligence, hosted by
+                    <a href="https://yixchen.github.io/">Yixin Chen</a>
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>Shanghai AI Laboratory</strong>, Content Generation
+                    and Digitization Group, hosted by
+                    <a href="https://daibo.info/">Bo Dai</a>
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>UCLA</strong>, Multi-Physics Lagrangian-Eulerian
+                    Simulations (MultiPLES) Laboratory, hosted by
+                    <a href="https://www.seas.upenn.edu/~ziyinq/">Ziyin Qu</a>
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>Shandong University</strong>, Interdisciplinary
+                    Research Center & Taishan College, hosted by
+                    <a href="https://haisenzhao.github.io/">Haisen Zhao</a>
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>Shandong University</strong>, Research Center of
+                    Human-Computer Interaction and Virtual Reality, hosted by
+                    <a href="https://wanglusdu.github.io/">Lu Wang</a>
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>CUHK</strong>, The Chinese University of Hong Kong
+                    (Shenzhen), GAP Lab, hosted by
+                    <a href="https://gaplab.cuhk.edu.cn/">Xiaoguang Han</a>
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>ICT CAS</strong>, Institute of Computing Technology,
+                    Chinese Academy of Sciences, hosted by
+                    <a href="http://geometrylearning.com/lin">Lin Gao</a> and
+                    <a href="http://people.geometrylearning.com/~jieyang/"
+                      >Jie Yang</a
+                    >
+                  </em>
+                </li>
+                <li>
+                  <em>
+                    <strong>Peking University</strong>, the School of Artificial
+                    Intelligence, hosted by
+                    <a href="https://siyandong.github.io/">Siyan Dong</a> and
+                    <a href="https://cfcs.pku.edu.cn/baoquan/">Baoquan Chen</a>
+                  </em>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <strong>如何多快好省地重建三维数字人 </strong> [<a
+              href="https://www.techbeat.net/talk-info?id=697"
+              ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+              >TechBeat&nbsp;(40 min)</a
+            >]
+          </li>
+          <li>
+            <strong
+              >走进马克思普朗克智能系统研究所与苏黎世联邦理工AIT团队</strong
+            >
+            [<a href="https://jmq.xet.tech/s/8he6q"
+              ><i class="fa fa-video" aria-hidden="true">&nbsp;</i>&nbsp;Part
+              A&nbsp;(2h)</a
+            >,
+            <a href="https://jmq.xet.tech/s/ld2pb"
+              ><i class="fa fa-video" aria-hidden="true">&nbsp;</i>Part
+              B&nbsp;(2h)</a
+            >]
+          </li>
+
+          <li>
+            <strong>ICON: 提高三维数字人重建的姿势水平</strong> [<a
+              href="https://www.icloud.com.cn/keynote/01dxNGQJ8mBIIUG6i8O61_UCA#ICON-CVPR2022"
+              ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+              >Keynote (726MB)</a
+            >,
+            <a href="https://jmq.xet.tech/s/4qkfFu"
+              ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+              >Video&nbsp;(60 min)</a
+            >]
+          </li>
+          <li>
+            <strong>Talking Papers Podcast: ICON</strong> [<a
+              href="https://www.buzzsprout.com/1914034/10466744"
+              >Link</a
+            >]
+          </li>
+          <li>
+            <strong
+              >Towards Large-scale Avatar Creation From In-the-wild
+              Pixels</strong
+            >
+            [<a
+              href="https://www.dropbox.com/s/fhukszvkme7n17q/ICON-slides.pdf?dl=0"
+              ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+              >Slides</a
+            >, 25MB]
+            <details>
+              <summary>
+                <em
+                  ><strong style="color: brown"
+                    >Meta, USC, OPPO, Tecent, Adobe</strong
+                  ></em
+                >
+              </summary>
+
+              <ul>
+                <li>
+                  <em
+                    ><strong>Meta Reality Labs</strong>, Pittsburgh, hosted by
+                    <a href="https://shunsukesaito.github.io/"
+                      >Shunsuke Saito</a
+                    >
+                    and
+                    <a href="https://sites.google.com/view/gjnam"
+                      >Giljoo Nam</a
+                    ></em
+                  >
+                </li>
+                <li>
+                  <em
+                    ><strong>USC-ICT</strong>, USC Institute for Creative
+                    Technology, hosted by
+                    <a href="https://www.yajie-zhao.com/">Yajie Zhao</a>
+                  </em>
+                </li>
+                <li>
+                  <em
+                    ><strong>Adobe</strong>, Digital Humans Seminar, hosted by
+                    <a href="https://zhouyisjtu.github.io/">Yi Zhou</a>
+                  </em>
+                </li>
+                <li>
+                  <em
+                    ><strong>OPPO</strong>, US Research Center, hosted by
+                    <a
+                      href="https://scholar.google.com/citations?user=FpuBRMwAAAAJ&hl=en"
+                      >Xudong Liu</a
+                    >
+                    and
+                    <a
+                      href="https://scholar.google.com/citations?user=Nut-uvoAAAAJ&hl=en"
+                      >Guojun Qi</a
+                    >
+                  </em>
+                </li>
+
+                <li>
+                  <em>
+                    <strong>Tecent</strong>, GY-Lab(光影研究室), hosted by
+                    <a href="https://www.isdas.cn/">Chao Xu</a> and
+                    <a href="https://www.skicyyu.org/">Gang Yu</a>
+                  </em>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <strong
+              >Pose trajectory extraction and novel-view synthesis from visual
+              content</strong
+            >
+            [<a
+              href="https://ps.is.mpg.de/talks/pose-trajectory-extraction-and-novel-view-synthesis-from-visual-content"
+              >Link</a
+            >]
+            <ul>
+              <li>
+                <em>
+                  Max Planck Institute for Intelligent Systems, hosted by
+                  <a href="https://vlg.inf.ethz.ch/">Siyu Tang</a>
+                </em>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h1>Academic Service</h1>
+        <ul>
+          <li>
+            <strong>Computer Graphics (CG)</strong>:
+            <ul>
+              <li>
+                <strong>Conference Reviewer</strong>: SIGGRAPH (2022, 2023),
+                SIGGRAPH Asia (2023, 2024), Eurographics (2024)
+              </li>
+              <li><strong>Journal Reviewer</strong>: TVCG, TOG</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Computer Vision (CV)</strong>:
+            <ul>
+              <li>
+                <strong>Conference Reviewer</strong>: CVPR (2022, 2023, 2024),
+                ECCV (2022, 2024), ICCV (2023), NeurIPS (2023), 3DV (2024)
+              </li>
+              <li><strong>Journal Reviewer</strong>: T-PAMI, TIP</li>
+              <li><strong>Area Chair</strong>: 3DV (2025)</li>
+              <li><strong>Publicity Chair</strong>: 3DV (2025)</li>
+              <li><strong>Workshop Organizer:</strong></li>
+              <ul>
+                <li>
+                  <a
+                    href="https://human-foundation.github.io/workshop-eccv-2024/"
+                    >Foundation Models for 3D Humans (ECCV'24)</a
+                  >
+                </li>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+        <h1>Blogs & Medias</h1>
+        <ul>
+          <li>
+            <strong style="color: brown">Blog</strong> CVPR'23 (Highlight) |
+            ECON: 一个数字人，显式隐式各自表述
+            <a href="https://zhuanlan.zhihu.com/p/626295986"
+              ><i class="fab fa-quora">&nbsp;</i
+              ><span class="fa-brands fa-zhihu fa-xl"></span
+            ></a>
+          </li>
+          <li>
+            <strong style="color: brown">Blog</strong> CVPR 2022 | ICON:
+            提高三维数字人重建的姿势水平
+            <a href="https://zhuanlan.zhihu.com/p/477379718"
+              ><i class="fab fa-quora">&nbsp;</i
+              ><span class="fa-brands fa-zhihu fa-xl"></span
+            ></a>
+          </li>
+          <li>
+            <strong style="color: brown">Translation</strong>
+            当我们谈科学研究的创新性时，我们在谈些什么
+            <a href="https://perceiving-systems.blog/en/news/novelty-in-science"
+              ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i
+              >Source&nbsp;</a
+            >
+            <a href="./blogs/novelty.html"
+              ><i class="fas fa-language" aria-hidden="true">&nbsp;</i
+              >译文&nbsp;</a
+            >
+          </li>
+          <li>
+            <strong style="color: brown">NYTimes</strong
+            ><a
+              href="https://www.nytimes.com/interactive/2023/02/13/sports/football/kadarius-toney-punt-return-super-bowl-chiefs.html"
+              >"See How Kansas City Secured Its Comeback"</a
+            >, ICON for Super Bowl 2023
+          </li>
+          <li>
+            <strong style="color: brown">NYTimes</strong
+            ><a
+              href="https://rd.nytimes.com/projects/modeling-key-world-cup-moments-with-machine-learning"
+            >
+              "Modeling Key World Cup Moments with Machine Learning"</a
+            >, ICON for World Cup 2022
+          </li>
+          <li>
+            <strong style="color: brown">ACMSIGGRAPH</strong>
+            <a
+              href="https://blog.siggraph.org/2020/08/broadcast-from-around-the-world-real-time-live-amazes-at-siggraph-2020.html/"
+            >
+              "Broadcast From Around the World"</a
+            >, MonoPort wins SIGGRAPH 2020 Real-Time Live
+          </li>
+        </ul>
+        <div align="center">
+          <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Ooq-HL7JBFNulS9RZKiki_qxntQVI1L1Cx0o-_DF3ZM"></script>
+          <strong
+            >This page is last updated at Nov. 2024. Thanks <a
+            href="https://xiuyuliang.cn/"
+          >
+            Prof. Yuliang Xiu</a
+          > for this template. <br />Find the code of shown gif <a href="https://github.com/JiaoKM/Jelly_Water_Tetris">here</a>
+            <span style="color: blue" id="demo"></span
+          ></strong>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
