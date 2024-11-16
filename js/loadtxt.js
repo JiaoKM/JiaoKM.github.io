@@ -1,12 +1,12 @@
 // PuzzleAvatar
 $(function(){
-    $.get("./abs/puzzleavatar.txt", function(data) {
+    $.get("./abs/AMFS.txt", function(data) {
        $("#puzzleavatarabs").html(data);
     });
  });
  
  $(function(){
-    $.get("./bib/puzzleavatar.txt", function(data) {
+    $.get("./bib/AMFS.txt", function(data) {
        $("#puzzleavatarbib").html(data);
     });
  });

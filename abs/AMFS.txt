@@ -1,0 +1,3 @@
+<div id="xiu2024puzzleavatar" style="display: none;">
+  <p>This is the introduction to the Xiu 2024 Puzzle Avatar.</p>
+</div>
