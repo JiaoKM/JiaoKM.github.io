@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4D Sports Scene Reconstruction</title>
+    <link href="../../style.css" rel="stylesheet" media="all" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/57fb8d417e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        padding-top: 0;
+        margin: 0;
+        background: #f7f9fd;
+      }
+
+      .project-page {
+        width: min(1120px, calc(100% - 32px));
+        margin: 28px auto;
+        background: #fff;
+        box-shadow: 0px 0px 20px #999;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .project-hero {
+        padding: 36px 42px 30px;
+        background: #eef4ff;
+        text-align: center;
+      }
+
+      .project-hero h1 {
+        margin: 0 0 14px;
+        line-height: 1.15;
+      }
+
+      .project-meta {
+        color: #4d5a6d;
+        line-height: 1.55;
+        margin-bottom: 18px;
+      }
+
+      .project-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .project-actions .box {
+        margin: 0;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .project-section {
+        padding: 28px 42px 8px;
+      }
+
+      .project-section h2 {
+        margin: 0 0 12px;
+      }
+
+      .abstract {
+        color: #4a4a4a;
+        line-height: 1.62;
+        margin: 0;
+      }
+
+      .demo-group {
+        padding: 16px 42px 28px;
+      }
+
+      .demo-group h3 {
+        margin: 18px 0 12px;
+        color: #1367a7;
+      }
+
+      .figure-showcase {
+        display: grid;
+        gap: 22px;
+      }
+
+      .method-figure {
+        display: grid;
+        grid-template-columns: minmax(280px, 1.1fr) minmax(240px, 0.9fr);
+        gap: 22px;
+        align-items: center;
+        padding: 18px;
+        border: 1px solid #d8e2f2;
+        border-radius: 8px;
+        background: #fbfdff;
+      }
+
+      .method-figure img {
+        width: 100%;
+        border-radius: 6px;
+        background: #fff;
+      }
+
+      .method-figure h3 {
+        margin: 0 0 10px;
+        color: #1367a7;
+      }
+
+      .method-figure p {
+        margin: 0;
+        color: #4a4a4a;
+        line-height: 1.56;
+      }
+
+      .video-strip {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        padding: 2px 2px 14px;
+        scroll-snap-type: x proximity;
+      }
+
+      .video-card {
+        flex: 0 0 min(360px, 82vw);
+        border: 1px solid #d8e2f2;
+        border-radius: 8px;
+        background: #fff;
+        overflow: hidden;
+        scroll-snap-align: start;
+      }
+
+      .video-card video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #111;
+      }
+
+      .footer-nav {
+        padding: 18px 42px 36px;
+      }
+
+      @media (max-width: 760px) {
+        .project-hero {
+          padding: 28px 22px;
+        }
+
+        .project-section,
+        .demo-group,
+        .footer-nav {
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+
+        .method-figure {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="project-page">
+      <section class="project-hero">
+        <div>
+          <h1>4D Sports Scene Reconstruction</h1>
+          <div class="project-meta">
+            <i>From Motion Capture System to Free-Viewpoint Video using Gaussian Splatting</i><br />
+            <a href="https://jiaokm.github.io/">Keming Jiao</a>, Master Thesis, 2026
+          </div>
+          <div class="project-actions">
+            <a class="box" href="../../paper/thesis_Keming_Jiao.pdf">
+              <i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
+            </a>
+            <a class="box" href="../../bib/4DSports.bib">
+              <i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>BibTeX
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Abstract</h2>
+        <p class="abstract">
+          Key actions, tactical cooperation, and spatial relationships in sports
+          activities are usually recorded through 2D videos, which limits users'
+          ability to understand the game in three-dimensional space. This thesis
+          presents a 4D sports scene reconstruction and replay pipeline based on
+          motion capture data and 3D Gaussian Splatting representations. The
+          system reconstructs dynamic human Gaussian avatars and the static
+          environment separately, then integrates them in a unified interactive
+          viewer for scene composition and rendering.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Method Overview</h2>
+        <div class="figure-showcase">
+          <article class="method-figure">
+            <img
+              src="images/Overview.png"
+              alt="Framework overview for sports scene reconstruction and rendering"
+            />
+            <div>
+              <h3>Overall Framework</h3>
+              <p>
+                The motion capture system provides multi-view images and human
+                skeletons, which are fitted to SMPL parameters. The images are
+                segmented into static environment and dynamic human components.
+                Environment Gaussians and Gaussian avatars are trained
+                separately, then merged in the viewer for interactive
+                free-viewpoint replay.
+              </p>
+            </div>
+          </article>
+
+          <article class="method-figure">
+            <img
+              src="images/Avatar.png"
+              alt="Gaussian avatar training pipeline"
+            />
+            <div>
+              <h3>Human Avatar Reconstruction</h3>
+              <p>
+                3D Gaussians are initialized on the SMPL canonical mesh. During
+                training, the Gaussians are deformed into pose space using SMPL
+                pose as reference, their attributes are predicted by hash-grid
+                encoders, and rendered avatar images are optimized against the
+                input views.
+              </p>
+            </div>
+          </article>
+
+          <article class="method-figure">
+            <img
+              src="images/Environment.png"
+              alt="Environment reconstruction pipeline"
+            />
+            <div>
+              <h3>Environment Reconstruction</h3>
+              <p>
+                Background-only images are used to extract a point cloud and
+                train static scene Gaussians. During optimization, the loss is
+                computed only on the background region, producing a court
+                representation that can be combined with dynamic avatars in the
+                viewer.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo-group">
+        <h2>Viewer Video Demos</h2>
+
+        <h3>All Dance</h3>
+        <div class="video-strip">
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/all-dance1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/all-dance2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/all-dance3.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <h3>ATC1 Views</h3>
+        <div class="video-strip">
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc1-view1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc1-view2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc1-view3.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc1-view4.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <h3>ATC2 Views</h3>
+        <div class="video-strip">
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc2-view1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc2-view2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc2-view3.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/atc2-view4.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <h3>Dance Views</h3>
+        <div class="video-strip">
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/dance01.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/dance02.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/dance03.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/dance04.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/dance05.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/viewer_video/dance06.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-group">
+        <h2>A-pose Avatar Demos</h2>
+        <div class="video-strip">
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_3.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_4.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_5.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_6.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_7.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_8.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_9.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_10.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_11.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls muted preload="metadata">
+              <source src="videos/A-pose/model_12.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-nav">
+        <a class="box" href="../../index.html#Thesis">
+          <i class="fas fa-arrow-left" aria-hidden="true">&nbsp;</i>Back to
+          Publications
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
